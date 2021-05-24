@@ -7,7 +7,7 @@ from multiprocessing import Pool
 
 def run(i):
     
-    url = 'https://d1v-h.phncdn.com/hls/videos/202003/14/292761081/,720P_4000K,480P_2000K,240P_400K,_292761081.mp4.urlset/seg-%01d-f1-v1-a1.ts'%i
+    url = 'https://*********seg-%01d.ts'%i
     print("开始下载："+url)
     headers = {"User-Agent": "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 10.0; WOW64; Trident/7.0; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; LENW8; 4399Box.1067)"}
     r = requests.get(url, headers = headers)
